@@ -1,0 +1,108 @@
+id: '17186465866110.3174976168348218'
+definitionId: chart
+styles:
+  xl:
+    gridItem:
+      x: 12
+      y: 0
+      w: 12
+      h: 79
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 134
+      w: 24
+      h: 67
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dataset: '{{actions.machines.data}}'
+  config: |-
+    option = {
+      title: {
+        text: 'Requests',
+        left: 10,
+        top: 10,
+      },
+      tooltip: {
+        trigger: 'axis'
+      },
+      legend: {
+        data: ['status="2xx*', 'status="4xx*'],
+        right: 10,
+        top: 10,
+      },
+      grid: {
+        left: '16',
+        right: '20',
+        bottom: '10',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['09:39:30', '09:40:00', '09:40:30', '09:41:00', '09:41:30', '09:42:00', '09:41:00']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [
+        {
+          name: 'status="2xx*',
+          type: 'line',
+          stack: 'Total',
+          areaStyle: {},
+          data: [120, 132, 101, 134, 90, 230, 210],
+          smooth: false,
+        },
+        {
+          name: 'status="4xx*',
+          type: 'line',
+          stack: 'Total',
+          areaStyle: {},
+          data: [220, 182, 191, 234, 290, 330, 310],
+          smooth: false,
+        },
+      ]
+    };
+  lineSmooth: true
+  name: machinesChart3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Machine
+  type: lineChart
+  structure:
+    - title: Machine
+      data: []
+      color: primary
+      xProp: lastMaintenanceDate
+      yProp: tasksInQueue
+      __UIBAKERY__SYSTEM_ID__: '16944364904620.8363533411795068'
+      groupType: day
+      groupFunctionType: count
+  showLoading:
+    withData: true
+    dataValue: '{{actions.machines.loading}}'
+    value: false
+  useJsConfig: echarts
+  barsWidth: 30
+  barsRounderdCorners: true
+parentSlotId: '17186465866110.2141942847805831'
+index: 0
+actions: {}
+slots: []

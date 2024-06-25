@@ -1,0 +1,71 @@
+id: '17186591642840.15366437132871624'
+definitionId: metric
+parentSlotId: '17186465521920.5318351392939162'
+styles:
+  xl:
+    gridItem:
+      x: 18
+      y: 0
+      w: 6
+      h: 37
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 196
+      w: 24
+      h: 37
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  data: '0.77'
+  name: metric4
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Algorithm Duration (sec)
+  operation: count
+  groupType: not_group
+  showLoading:
+    withData: false
+    dataValue: 'false'
+    value: false
+  cssClasses:
+    - small-metric
+actions: {}
+slots:
+  - id: '17186591642840.611518255979874'
+    name: metricField
+    children:
+      - id: '17186591642840.9822216091523182'
+        definitionId: atomicNumber
+        styles: {}
+        properties:
+          name: atomicNumber4
+          prop: id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          mappedValue: '12.5'
+          disableFormatting: true
+        parentSlotId: '17186591642840.611518255979874'
+        index: 0
+        slots: []
+  - id: '17186591642840.6773454238267331'
+    name: additionalField
+    children: []
+  - id: '17186591642840.7296265274572178'
+    name: groupByField
+    children: []

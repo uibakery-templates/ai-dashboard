@@ -1,0 +1,51 @@
+id: '17186465521920.4053975533620062'
+definitionId: collapsibleCard
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 15
+      w: 24
+      h: 89
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 766
+      w: 24
+      h: 40
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  heightMode: auto
+  name: collapsibleCard
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+slots:
+  - id: '17186465521920.4528310641774329'
+    name: header
+    children:
+      - heading4.yml
+  - id: '17186465521920.645939064292008'
+    name: footer
+    children: []
+  - id: '17186465521920.7218214114626182'
+    name: views
+    children:
+      - view_3/view_3.yml

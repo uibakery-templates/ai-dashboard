@@ -1,0 +1,71 @@
+id: '17186589737350.4811826629611329'
+definitionId: metric
+parentSlotId: '17186465521920.5318351392939162'
+styles:
+  xl:
+    gridItem:
+      x: 12
+      y: 0
+      w: 6
+      h: 37
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 134
+      w: 24
+      h: 25
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  data: '0.77'
+  name: metric2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Risk score
+  operation: count
+  groupType: not_group
+  showLoading:
+    withData: false
+    dataValue: 'false'
+    value: false
+  cssClasses:
+    - small-metric
+actions: {}
+slots:
+  - id: '17186589737350.4274084700911158'
+    name: metricField
+    children:
+      - id: '17186589737350.8077932257507681'
+        definitionId: atomicNumber
+        styles: {}
+        properties:
+          name: atomicNumber2
+          prop: id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          mappedValue: '0.77'
+          disableFormatting: true
+        parentSlotId: '17186589737350.4274084700911158'
+        index: 0
+        slots: []
+  - id: '17186589737350.0030014342293467333'
+    name: additionalField
+    children: []
+  - id: '17186589737350.7114979588293917'
+    name: groupByField
+    children: []
